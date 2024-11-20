@@ -33,6 +33,8 @@ fun NavigatorControl(
         navController = navHost,
         startDestination = Halaman.FORMMAHASISWA.name
     ){
-
+        composable(route = Halaman.FORMMAHASISWA.name){
+            val konteks = LocalContext.current
+        }
     }
 }
