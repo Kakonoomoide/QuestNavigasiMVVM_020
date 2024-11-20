@@ -35,6 +35,13 @@ fun NavigatorControl(
     ){
         composable(route = Halaman.FORMMAHASISWA.name){
             val konteks = LocalContext.current
+            FormMahasiswaView(
+                listgender = ListGender.listGender.map { id -> konteks.getString(id) },
+                onSubmitClick = { listData ->
+                    viewModel.saveDataMhs(listData)
+                    navHost.navigate(Halaman.DETAILMAHASISWA.name)
+                }
+            )
         }
     }
 }
