@@ -45,6 +45,11 @@ fun NavigatorControl(
         }
 
         composable(route = Halaman.DETAILMAHASISWA.name) {
+            DetailMahasiswaView(
+                dataMhs = uiState,
+                modifier = Modifier,
+                onBackButton = { navHost.popBackStack() }
+            )
         }
     }
 }
