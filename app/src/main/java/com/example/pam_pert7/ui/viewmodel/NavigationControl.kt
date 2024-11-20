@@ -43,5 +43,8 @@ fun NavigatorControl(
                 }
             )
         }
+
+        composable(route = Halaman.DETAILMAHASISWA.name) {
+        }
     }
 }
