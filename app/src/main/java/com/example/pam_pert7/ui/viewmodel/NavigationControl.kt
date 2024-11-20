@@ -29,5 +29,10 @@ fun NavigatorControl(
 ){
     val uiState by viewModel.dataModel.collectAsState()
     //val _dataModel by viewModel.dataModel.collectAsState()
+    NavHost(
+        navController = navHost,
+        startDestination = Halaman.FORMMAHASISWA.name
+    ){
 
+    }
 }
